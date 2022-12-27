@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <style>
+        *{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Century Gothic", sans-serif;
+   transition: 0.6s;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+        .navalist{
+    width: 100%;
+    padding: 5px 10vw;
+    position: fixed;
+    background: rgba(15, 137, 236, 0.9);
+    z-index: 10;
+}
+.navalist ul{
+    display: flex;
+    list-style: none;
+}
+.navalist ul li:first-child{
+    flex: 1;
+}
+.navalist ul h4{
+   font-family: serif;
+   color: #fff;
+}
+.navalist ul a{
+    margin-left: 20px;
+    font-size: 12px;
+}
+.navalist ul a:hover{
+    color: #f80;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+       </style>
+    </head>
+    <body>
+        <nav class="navalist">
+            <ul>
+               <li><h3>TNC</h3></li>
+               <li><a href="The National College.html">HOME</a></li>
+               <li><a href="">ABOUT</a></li>
+               <li><a href="">COURSE</a></li>
+               <li><a href="">FACULTY</a></li>
+               <li><a href="placements.html">PLACEMENTS</a></li>
+
+               <li><a href="contact us.html">CONTACT US</a></li>
+            </ul>
+         </nav>
+        
+         <div class="container">
+            <div style="text-align:center">
+                <h7>      .          </h7>
+              <h2>Enquiry</h2>
+              
+            </div>
+            <div class="row">
+              <div class="column">
+                <img src="https://images.unsplash.com/photo-1533854775446-95c4609da544?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODZ8fGNvbGxlZ2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" style="width:100%">
+              </div>
+              <div class="column">
+                <form action="/action_page.php">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  <label for="emailid">Email Id</label>
+                  <input type="text" id="emailid" name="emailid" placeholder="Your email id..">
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="india">India</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                    <option value="france">France</option>
+                    <option value="england">England</option>
+                    <option value="germany">Germany</option>
+                  </select>
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+            </div>
+          </div>
+         
+    </body>
+</html>
